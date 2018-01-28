@@ -1,9 +1,17 @@
 package com.sdabyd2.programowanie.model;
 
+import java.util.List;
+
 public class GiantModel {
     private Health health;
     private Fatigue fatigue;
     private Nourishment nourishment;
+
+    public GiantModel(Health health, Fatigue fatigue, Nourishment nourishment) {
+        this.health = health;
+        this.fatigue = fatigue;
+        this.nourishment = nourishment;
+    }
 
     public Health getHealth(){
         return health;
@@ -26,5 +34,14 @@ public class GiantModel {
 
     public void setNourishment(Nourishment nourishment) {
         this.nourishment = nourishment;
+    }
+
+    @Override
+    public String toString() {
+        return "GiantModel{" +
+                "health=" + health +
+                ", fatigue=" + fatigue +
+                ", nourishment=" + nourishment +
+                "}\n";
     }
 }

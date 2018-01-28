@@ -1,7 +1,7 @@
 package com.sdabyd2.programowanie.model;
 
 public enum Nourishment {
-    HUNGRY("hungry"), NOTHUNGRY("notHungry"), STRAVING("straving");
+    HUNGRY("hungry"), NOTHUNGRY("notHungry"), STARVING("starving");
 
     private String title;
     Nourishment(String title){
@@ -10,8 +10,6 @@ public enum Nourishment {
 
     @Override
     public String toString() {
-        return "Nourishment{" +
-                "title='" + title + '\'' +
-                '}';
+        return title;
     }
 }

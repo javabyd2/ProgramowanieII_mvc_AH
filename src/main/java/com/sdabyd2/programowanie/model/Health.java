@@ -11,8 +11,6 @@ public enum Health {
 
     @Override
     public String toString() {
-        return "Health{" +
-                "title='" + title + '\'' +
-                '}';
+        return title;
     }
 }

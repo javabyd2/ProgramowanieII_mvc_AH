@@ -10,8 +10,6 @@ public enum Fatigue {
 
     @Override
     public String toString() {
-        return "Fatigue{" +
-                "title='" + title + '\'' +
-                '}';
+        return title;
     }
 }
